@@ -95,8 +95,8 @@ def predict_data(raw_data):
     yhat = lstm_model.predict(X,1)
     yhat=inverse_scale(scaler,X,yhat)
     yhat=inverse_difference(raw_data,yhat,1)
-    print("Current Value is:",raw_data,end=' ')
-    print("Naxt value could be ",yhat, end=' ')
+    print("Current Value is:",raw_data)
+    print("Naxt value could be ",yhat)
     predict_alert(yhat)
     num_list.append(raw_data)
 
