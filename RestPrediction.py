@@ -5,6 +5,8 @@ import numpy as np
 from flask import Flask,request,jsonify
 from matplotlib import pyplot
 
+#This comment is to validate the git push from sagemaker jupyter lab.
+
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import MinMaxScaler
